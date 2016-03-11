@@ -9,7 +9,7 @@ WinMain(HINSTANCE hInstance,
 #if _DEBUG
 	OutputDebugString(L"Running in debug mode.\n");
 #endif
-	MessageBox(0, L"Press OK.", L"The New App",
-			   MB_OK | MB_ICONINFORMATION);
+	MessageBox(0, L"Press OK.", L"The New App", 
+		MB_OKCANCEL | MB_ICONINFORMATION);
 	return(0);
 }
