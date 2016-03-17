@@ -1,4 +1,16 @@
 #include <Windows.h>
+#if _DEBUG
+#include <crtdbg.h>
+#endif
+
+int 
+F(void)
+{
+	void* x = malloc(512);
+#if _DEBUG
+	return (_CrtDumpMemoryLeaks());
+#endif
+}
 
 int CALLBACK
 WinMain(HINSTANCE hInstance,
@@ -6,9 +18,7 @@ WinMain(HINSTANCE hInstance,
 		LPSTR lpCmdLine,
 		int nCmdShow)
 {
-#if _DEBUG
-	OutputDebugString(L"Running in debug mode.\n");
-#endif
+	F();
 	MessageBox(0, L"Press OK.", L"The New App", 
 		MB_OKCANCEL | MB_ICONINFORMATION);
 	return(0);
