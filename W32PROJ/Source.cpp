@@ -3,8 +3,6 @@
 #if _DEBUG
 #include <crtdbg.h>
 #endif
-#define _CRT_SECURE_NO_WARNINGS
-#pragma warning(disable:4996)
 
 void
 F(void)
@@ -15,9 +13,10 @@ F(void)
 	_snwprintf_s(TextBuffer, sizeof(TextBuffer), L"The answer is always %d\n", a0);
 	OutputDebugString(TextBuffer);
 
-	char str[128] = "";
-	sprintf(str, "%s %s", str, "FUNC");
-	sprintf(str, "%s %s", str, "0");
+	char str[128] = "START";
+	//sprintf(str, "%s %s", str, "FUNC");
+	sprintf_s(str, 128, "%s %s", str, "FUNC");
+	sprintf_s(str, 128, "%s %s", str, "0");
 	OutputDebugStringA(str);
 }
 
