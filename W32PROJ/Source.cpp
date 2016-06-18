@@ -14,7 +14,6 @@ F(void)
 	OutputDebugString(TextBuffer);
 
 	char str[128] = "START";
-	//sprintf(str, "%s %s", str, "FUNC");
 	sprintf_s(str, 128, "%s %s", str, "FUNC");
 	sprintf_s(str, 128, "%s %s", str, "0");
 	OutputDebugStringA(str);
