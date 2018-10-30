@@ -35,6 +35,7 @@ WinMain(HINSTANCE hInstance,
 		int nCmdShow)
 {
 	F();
+	F2();
 	MessageBox(0, L"Press OK.", L"The New App", 
 		MB_OKCANCEL | MB_ICONINFORMATION);
 	return(0);
