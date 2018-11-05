@@ -34,6 +34,9 @@ WinMain(HINSTANCE hInstance,
 		LPSTR lpCmdLine,
 		int nCmdShow)
 {
+	void * a = ((void *)0);
+	void * b = &a + 1;
+	b = (void *)1;
 	F();
 	F2();
 	MessageBox(0, L"Press OK.", L"The New App", 
