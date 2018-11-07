@@ -36,10 +36,6 @@ void Concat1(char s[256], char t[256])
 		++i;
 	}
 
-	/* test code */
-	s[2] = t[2];
-	/* test code */
-
 	while (t[j] != '\0') {
 		s[i] = t[j];
 		++i;
