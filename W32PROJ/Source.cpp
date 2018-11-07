@@ -28,23 +28,59 @@ F2(void)
 	OutputDebugString(TextBuffer);
 }
 
+void Concat1(char s[256], char t[256])
+{
+	int i = 0, j = 0;
+
+	while (s[i] != '\0') {
+		++i;
+	}
+
+	/* test code */
+	s[2] = t[2];
+	/* test code */
+
+	while (t[j] != '\0') {
+		s[i] = t[j];
+		++i;
+		++j;
+	}
+
+	s[i] = '\0';
+
+	char output[512] = "";
+	sprintf_s(output, sizeof(output), "result of Concat1 is %s\n", s);
+	OutputDebugStringA(output);
+}
+
+void Concat2(char s[256], char t[256])
+{
+	int i = 0, j = 0;
+	
+	while (s[i] != '\0') { ++i; };
+
+	while ((s[i++] = t[j++]) != '\0');
+
+	char output[512] = "";
+	sprintf_s(output, sizeof(output), "result of Concat2 is %s\n", s);
+	OutputDebugStringA(output);
+}
+
 int CALLBACK
 WinMain(HINSTANCE hInstance,
-		HINSTANCE hPrevInstance,
-		LPSTR lpCmdLine,
-		int nCmdShow)
+	HINSTANCE hPrevInstance,
+	LPSTR lpCmdLine,
+	int nCmdShow)
 {
-	INT8 C = 0;
-	++C;
-	++C;
-
-	INT8 D = 0;
-	C = 0x58;
-	D = 0x68;
-
 	F();
 	F2();
-	MessageBox(0, L"Press OK.", L"The New App", 
+
+	char line1[256] = "Yo. ";
+	char line2[256] = "This is a test. ";
+	Concat1(line1, line2);
+	Concat2(line1, line2);
+
+	MessageBox(0, L"Press OK.", L"The New App",
 		MB_OKCANCEL | MB_ICONINFORMATION);
 	return(0);
 }
