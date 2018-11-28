@@ -28,6 +28,41 @@ F2(void)
 	OutputDebugString(TextBuffer);
 }
 
+void
+F3(void)
+{
+	UINT8 a0 = 0;
+	a0++;
+	++a0;
+	a0++;
+}
+
+inline UINT32
+GetHex(char Char)
+{
+	UINT32 Result = 0;
+
+	if ((Char >= '0') && (Char <= '9'))
+	{
+		Result = Char - '0';
+	}
+	else if ((Char >= 'A') && (Char <= 'F'))
+	{
+		Result = 0xA + (Char - 'A');
+
+	}
+	return(Result);
+}
+
+void
+F4(void)
+{
+	UINT32 A0 = GetHex('F');
+	WCHAR TextBuffer[512];
+	_snwprintf_s(TextBuffer, sizeof(TextBuffer), L"\nResult from GetHex is %d\n", A0);
+	OutputDebugString(TextBuffer);
+}
+
 void Concat1(char s[256], char t[256])
 {
 	int i = 0, j = 0;
@@ -69,7 +104,8 @@ WinMain(HINSTANCE hInstance,
 	int nCmdShow)
 {
 	F();
-	F2();
+	F2(); 
+	F4();
 
 	char line1[256] = "Yo. ";
 	char line2[256] = "This is a test. ";
