@@ -28,15 +28,6 @@ F2(void)
 	OutputDebugString(TextBuffer);
 }
 
-void
-F3(void)
-{
-	UINT8 a0 = 0;
-	a0++;
-	++a0;
-	a0++;
-}
-
 inline UINT32
 GetHex(char Char)
 {
