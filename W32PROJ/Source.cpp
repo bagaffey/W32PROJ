@@ -54,6 +54,13 @@ F4(void)
 	OutputDebugString(TextBuffer);
 }
 
+UINT32
+F5(void)
+{
+	UINT32 Result = 15;
+	return(Result);
+}
+
 void Concat1(char s[256], char t[256])
 {
 	int i = 0, j = 0;
