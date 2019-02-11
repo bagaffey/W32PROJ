@@ -1,2 +1,2 @@
 # W32PROJ
-Sandbox for Visual Cxx
+Sandbox for Visual Cxx code.
