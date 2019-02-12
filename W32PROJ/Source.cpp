@@ -1,5 +1,6 @@
 #include <Windows.h>
 #include <stdio.h>
+#define INTERNAL_BUILD 0
 #if _DEBUG
 #include <crtdbg.h>
 #endif
