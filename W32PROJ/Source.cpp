@@ -111,7 +111,7 @@ WinMain(HINSTANCE hInstance,
 	Concat1(line1, line2);
 	Concat2(line1, line2);
 
-	MessageBox(0, L"Press OK.", L"The New App",
+	MessageBox(0, L"Press OK.", L"Testing App",
 		MB_OKCANCEL | MB_ICONINFORMATION);
 	return(0);
 }
