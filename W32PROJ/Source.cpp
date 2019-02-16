@@ -22,7 +22,7 @@ F(void)
 void
 F2(void)
 {
-	UINT8 a0 = 2;
+	UINT8 a0 = 4;
 	WCHAR TextBuffer[512];
 	_snwprintf_s(TextBuffer, sizeof(TextBuffer), L"\nThe answer is now %d\n", a0 & 2);
 	OutputDebugString(TextBuffer);
