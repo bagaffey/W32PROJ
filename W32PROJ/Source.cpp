@@ -48,7 +48,7 @@ GetHex(char Char)
 void
 F4(void)
 {
-	UINT32 A0 = GetHex('F');
+	UINT32 A0 = GetHex('E');
 	WCHAR TextBuffer[512];
 	_snwprintf_s(TextBuffer, sizeof(TextBuffer), L"\nResult from GetHex is %d\n", A0);
 	OutputDebugString(TextBuffer);
