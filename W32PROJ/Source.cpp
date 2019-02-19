@@ -109,6 +109,11 @@ WinMain(HINSTANCE hInstance,
 	char line2[256] = "This is a test. ";
 	Concat1(line1, line2);
 	Concat2(line1, line2);
+	
+	char line3[256] = "Azure";
+	char line4[256] = "Block Storage";
+	Concat1(line3, line4);
+	Concat2(line3, line4);
 
 	MessageBox(0, L"Press OK.", L"Testing App",
 		MB_OKCANCEL | MB_ICONINFORMATION);
