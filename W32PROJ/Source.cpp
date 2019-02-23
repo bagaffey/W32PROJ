@@ -105,7 +105,7 @@ WinMain(HINSTANCE hInstance,
 	F2(); 
 	F4();
 
-	char line1[256] = "Yo. Discipline equals freedom. ";
+	char line1[256] = "Discipline equals freedom. ";
 	char line2[256] = "This is a test. ";
 	Concat1(line1, line2);
 	Concat2(line1, line2);
