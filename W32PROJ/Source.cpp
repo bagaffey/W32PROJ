@@ -95,15 +95,6 @@ void Concat2(char s[256], char t[256])
 	OutputDebugStringA(output);
 }
 
-void
-F7(void)
-{
-	UINT8 a0 = 2;
-	WCHAR TextBuffer[512];
-	_snwprintf_s(TextBuffer, sizeof(TextBuffer), L"\nThe answer is now %d\n", a0 & 2);
-	OutputDebugString(TextBuffer);
-}
-
 int CALLBACK
 WinMain(HINSTANCE hInstance,
 	HINSTANCE hPrevInstance,
