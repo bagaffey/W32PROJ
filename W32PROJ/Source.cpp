@@ -78,7 +78,7 @@ void Concat1(char s[256], char t[256])
 	s[i] = '\0';
 
 	char output[512] = "";
-	sprintf_s(output, sizeof(output), "result of Concat1 is %s\n", s);
+	sprintf_s(output, sizeof(output), "Result of Concat1 is %s\n", s);
 	OutputDebugStringA(output);
 }
 
