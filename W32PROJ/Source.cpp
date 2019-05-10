@@ -45,10 +45,27 @@ GetHex(char Char)
 	return(Result);
 }
 
+inline INT32
+GetHexI(char Char)
+{
+	INT32 Result = 0;
+
+	if ((Char >= '0') && (Char <= '9'))
+	{
+		Result = Char - '0';
+	}
+	else if ((Char >= 'A') && (Char <= 'F'))
+	{
+		Result = 0xA + (Char - 'A');
+
+	}
+	return(Result);
+}
+
 void
 F4(void)
 {
-	UINT32 A0 = GetHex('E');
+	INT32 A0 = GetHexI('FFFF');
 	WCHAR TextBuffer[512];
 	_snwprintf_s(TextBuffer, sizeof(TextBuffer), L"\nResult from GetHex is %d\n", A0);
 	OutputDebugString(TextBuffer);
@@ -104,16 +121,6 @@ WinMain(HINSTANCE hInstance,
 	F();
 	F2(); 
 	F4();
-
-	char line1[256] = "Discipline equals freedom. ";
-	char line2[256] = "This is a test. ";
-	Concat1(line1, line2);
-	Concat2(line1, line2);
-	
-	char line3[256] = "Azure";
-	char line4[256] = "Block Storage";
-	Concat1(line3, line4);
-	Concat2(line3, line4);
 
 	MessageBox(0, L"Press OK.", L"Testing App",
 		MB_OKCANCEL | MB_ICONINFORMATION);
