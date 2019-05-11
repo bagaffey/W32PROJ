@@ -45,27 +45,10 @@ GetHex(char Char)
 	return(Result);
 }
 
-inline INT32
-GetHexI(char Char)
-{
-	INT32 Result = 0;
-
-	if ((Char >= '0') && (Char <= '9'))
-	{
-		Result = Char - '0';
-	}
-	else if ((Char >= 'A') && (Char <= 'F'))
-	{
-		Result = 0xA + (Char - 'A');
-
-	}
-	return(Result);
-}
-
 void
 F4(void)
 {
-	INT32 A0 = GetHexI('FFFF');
+	INT32 A0 = GetHex('F');
 	WCHAR TextBuffer[512];
 	_snwprintf_s(TextBuffer, sizeof(TextBuffer), L"\nResult from GetHex is %d\n", A0);
 	OutputDebugString(TextBuffer);
