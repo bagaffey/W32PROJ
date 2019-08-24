@@ -10,7 +10,8 @@ F(void)
 	UINT16 a0 = 9;
 	a0 |= 2;
 	WCHAR TextBuffer[512];
-	_snwprintf_s(TextBuffer, sizeof(TextBuffer), L"The answer is always %d\n", 
+	_snwprintf_s(TextBuffer, sizeof(TextBuffer), 
+		     L"The answer is always %d\n", 
 		     a0);
 	OutputDebugString(TextBuffer);
 
