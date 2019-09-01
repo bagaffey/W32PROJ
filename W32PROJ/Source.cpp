@@ -106,7 +106,6 @@ WinMain(HINSTANCE hInstance,
 	F();
 	F2();
 	F4();
-	F5();
 
 	MessageBox(0, L"Press OK.", L"Testing App",
 		MB_OKCANCEL | MB_ICONINFORMATION);
