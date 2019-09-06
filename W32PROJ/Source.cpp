@@ -59,7 +59,7 @@ F4(void)
 UINT32
 F5(void)
 {
-	UINT32 Result = 15;
+	UINT32 Result = 12;
 	return(Result);
 }
 
