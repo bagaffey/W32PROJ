@@ -60,7 +60,7 @@ UINT32
 F5(void)
 {
 	UINT32 Result = 12;
-	return(Result);
+	return (Result);
 }
 
 void Concat1(char s[256], char t[256])
