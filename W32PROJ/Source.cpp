@@ -98,7 +98,7 @@ void Concat2(char s[256], char t[256])
 }
 //
 //se
-//
+
 int CALLBACK
 WinMain(HINSTANCE hInstance,
 	HINSTANCE hPrevInstance,
