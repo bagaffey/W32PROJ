@@ -98,7 +98,7 @@ void Concat2(char s[256], char t[256])
 }
 // minute or two
 // notes, poseidon
-// newest releases
+// Still living
 
 int CALLBACK
 WinMain(HINSTANCE hInstance,
