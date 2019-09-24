@@ -98,7 +98,7 @@ void Concat2(char s[256], char t[256])
 }
 // cold night
 // notes, poseidon
-// Still living
+// Rest is good and necessary
 
 int CALLBACK
 WinMain(HINSTANCE hInstance,
