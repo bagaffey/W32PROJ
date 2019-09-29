@@ -96,7 +96,7 @@ void Concat2(char s[256], char t[256])
 	sprintf_s(output, sizeof(output), "result of Concat2 is %s\n", s);
 	OutputDebugStringA(output);
 }
-// SSIS woes, he didn't know.
+// Pause
 // Lord Minimus
 // Rest is good and necessary
 
