@@ -97,7 +97,7 @@ void Concat2(char s[256], char t[256])
 	OutputDebugStringA(output);
 }
 // SSIS woes, he didn't know.
-// Aye
+// Lord Minimus
 // Rest is good and necessary
 
 int CALLBACK
