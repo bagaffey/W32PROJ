@@ -98,7 +98,6 @@ void Concat2(char s[256], char t[256])
 }
 // Lord Minimus
 // Rest is good and necessary
-//
 
 int CALLBACK
 WinMain(HINSTANCE hInstance,
