@@ -96,7 +96,6 @@ void Concat2(char s[256], char t[256])
 	sprintf_s(output, sizeof(output), "result of Concat2 is %s\n", s);
 	OutputDebugStringA(output);
 }
-// I can't tell
 
 int CALLBACK
 WinMain(HINSTANCE hInstance,
