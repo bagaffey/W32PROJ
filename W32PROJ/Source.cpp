@@ -97,6 +97,7 @@ void Concat2(char s[256], char t[256])
 	OutputDebugStringA(output);
 }
 // Good ol' fun
+//
 
 int CALLBACK
 WinMain(HINSTANCE hInstance,
