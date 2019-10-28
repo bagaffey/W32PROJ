@@ -8,7 +8,7 @@ void
 F(void)
 {
 	UINT16 a0 = 9;
-	a0 |= 2;
+	a0 |= 6;
 	WCHAR TextBuffer[512];
 	_snwprintf_s(TextBuffer, sizeof(TextBuffer), 
 		     L"The answer is always %d\n", 
@@ -96,7 +96,6 @@ void Concat2(char s[256], char t[256])
 	sprintf_s(output, sizeof(output), "result of Concat2 is %s\n", s);
 	OutputDebugStringA(output);
 }
-// Cell theme
 
 int CALLBACK
 WinMain(HINSTANCE hInstance,
