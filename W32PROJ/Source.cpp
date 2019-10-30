@@ -8,7 +8,7 @@ void
 F(void)
 {
 	UINT16 a0 = 9;
-	a0 |= 6;
+	a0 |= 4;
 	WCHAR TextBuffer[512];
 	_snwprintf_s(TextBuffer, sizeof(TextBuffer), 
 		     L"The answer is always %d\n", 
