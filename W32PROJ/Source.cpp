@@ -105,6 +105,7 @@ WinMain(HINSTANCE hInstance,
 {
 	F();
 	F2();
+	
 	F4();
 
 	MessageBox(0, L"Press OK.", L"Testing App",
