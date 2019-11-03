@@ -112,4 +112,3 @@ WinMain(HINSTANCE hInstance,
 		MB_OKCANCEL | MB_ICONINFORMATION);
 	return(0);
 }
-///////////////
