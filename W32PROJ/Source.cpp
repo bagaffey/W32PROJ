@@ -84,6 +84,8 @@ void Concat1(char s[256], char t[256])
 	OutputDebugStringA(output);
 }
 
+// Unbreakable key
+
 void Concat2(char s[256], char t[256])
 {
 	int i = 0, j = 0;
