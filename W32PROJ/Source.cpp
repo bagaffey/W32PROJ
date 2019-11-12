@@ -15,6 +15,8 @@ F(void)
 		     a0);
 	OutputDebugString(TextBuffer);
 
+	UINT15 Forlorn = 1;
+	--Forlorn;
 	char str[128] = "START";
 	sprintf_s(str, 128, "%s %s", str, "FUNC");
 	sprintf_s(str, 128, "%s %s", str, "0");
