@@ -108,7 +108,7 @@ WinMain(HINSTANCE hInstance,
 	F2();
 	
 	F4();
-
+// Tired, Change the below code.
 	MessageBox(0, L"Press OK.", L"Testing App",
 		MB_OKCANCEL | MB_ICONINFORMATION);
 	return(0);
