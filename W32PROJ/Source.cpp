@@ -108,8 +108,7 @@ WinMain(HINSTANCE hInstance,
 	F2();
 	
 	F4();
-// Tired, Change the below code.
-	MessageBox(0, L"Press OK.", L"Testing App",
+	MessageBox(0, L"Maximum memory utilization reached.", L"Testing App",
 		MB_ABORTRETRYIGNORE | MB_ICONINFORMATION);
 	return(0);
 }
