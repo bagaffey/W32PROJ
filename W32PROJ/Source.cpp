@@ -108,7 +108,7 @@ WinMain(HINSTANCE hInstance,
 	F2();
 	
 	F4();
-	char * ValueString;
+	
 	MessageBox(0, L"Battlecruiser operational.", L"Battlecruiser Application",
 		MB_ABORTRETRYIGNORE | MB_ICONINFORMATION);
 	return(0);
