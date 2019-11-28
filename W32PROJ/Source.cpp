@@ -106,7 +106,6 @@ WinMain(HINSTANCE hInstance,
 {
 	F();
 	F2();
-	
 	F4();
 	
 	MessageBox(0, L"Battlecruiser operational.", L"Battlecruiser Application",
