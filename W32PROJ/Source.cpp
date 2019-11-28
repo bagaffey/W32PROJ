@@ -105,6 +105,7 @@ WinMain(HINSTANCE hInstance,
 	int nCmdShow)
 {
 	F();
+	
 	F2();
 	F4();
 	
