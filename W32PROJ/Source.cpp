@@ -112,4 +112,3 @@ WinMain(HINSTANCE hInstance,
 		MB_ABORTRETRYIGNORE | MB_ICONINFORMATION);
 	return(0);
 }
-// Was it the way you imagined it?
