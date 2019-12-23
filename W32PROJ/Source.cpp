@@ -113,4 +113,3 @@ WinMain(HINSTANCE hInstance,
 		MB_ABORTRETRYIGNORE | MB_ICONINFORMATION);
 	return(0);
 }
-//dang
