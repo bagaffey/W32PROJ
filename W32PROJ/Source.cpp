@@ -108,7 +108,7 @@ WinMain(HINSTANCE hInstance,
 	F();
 	F2();
 	F4();
-	// Just trying to ship a webpage to people.
+	// 000
 	
 	MessageBox(0, L"Battlecruiser operational.", L"Battlecruiser Application",
 		MB_ABORTRETRYIGNORE | MB_ICONINFORMATION);
