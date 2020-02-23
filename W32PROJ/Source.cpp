@@ -108,7 +108,7 @@ WinMain(HINSTANCE hInstance,
 	F();
 	F2();
 	F4();
-	// Boiling river, the mystery
+	// Buffalo
 	
 	MessageBox(0, L"Battlecruiser operational.", L"Battlecruiser Application",
 		MB_ABORTRETRYIGNORE | MB_ICONINFORMATION);
