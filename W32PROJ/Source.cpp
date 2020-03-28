@@ -108,7 +108,7 @@ WinMain(HINSTANCE hInstance,
 	F();
 	F2();
 	F4();
-	// Right to the door
+	// Week 3 of the PANDEMIC
 	
 	MessageBox(0, L"Battlecruiser operational.", L"Battlecruiser Application",
 		MB_ABORTRETRYIGNORE | MB_ICONINFORMATION);
