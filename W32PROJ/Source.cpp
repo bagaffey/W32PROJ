@@ -108,7 +108,7 @@ WinMain(HINSTANCE hInstance,
 	F();
 	F2();
 	F4();
-	// Week 3 of the PANDEMIC BEGINS
+	// Mentiras
 	
 	MessageBox(0, L"Battlecruiser operational.", L"Battlecruiser Application",
 		MB_ABORTRETRYIGNORE | MB_ICONINFORMATION);
