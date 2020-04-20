@@ -108,7 +108,7 @@ WinMain(HINSTANCE hInstance,
 	F();
 	F2();
 	F4();
-	// zu viel
+	// high-five
 	
 	MessageBox(0, L"Battlecruiser operational.", L"Battlecruiser Application",
 		MB_ABORTRETRYIGNORE | MB_ICONINFORMATION);
