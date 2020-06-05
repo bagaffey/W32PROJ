@@ -8,7 +8,6 @@
 >and who at the worst, if he fails, at least fails while daring greatly, 
 
 >so that his place shall never be with those cold and timid souls who neither know victory nor defeat.
-test
 ****
 
  
